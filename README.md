@@ -1,4 +1,4 @@
-# ❄️ Winter 1944
+# ❄️ Puissance4
 
 **Puissance 4** est une version du célébre jeu du meme nom.
 Il permet la manipulation du modèle MVC et une première visualisation du modèle MVC. 
