@@ -1,0 +1,1 @@
+package fr.univartois.butinfo.ihm.fourinaline.model;
