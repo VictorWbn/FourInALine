@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="612.0" prefWidth="611.0" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.univartois.butinfo.ihm.fourinaline.controller.FourInALineController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <ImageView fitHeight="103.0" fitWidth="505.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@images/PUISSANCE4.jpg" />
+      </image>
+   </ImageView>
+   <BorderPane prefHeight="302.0" prefWidth="557.0">
+      <center>
+         <AnchorPane prefWidth="430.0" BorderPane.alignment="CENTER">
+            <children>
+               <GridPane fx:id="grid" alignment="CENTER_LEFT" gridLinesVisible="true" layoutX="89.0" layoutY="1.0" maxWidth="350.0" prefHeight="302.0" prefWidth="538.0" style="-fx-background-color: blue; -fx-border-color: blue;">
+                 <columnConstraints>
+                     <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="50.0" />
+                     <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="50.0" />
+                   <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="50.0" />
+                   <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="50.0" />
+                     <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="50.0" />
+                     <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="50.0" />
+                     <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="50.0" />
+                 </columnConstraints>
+                 <rowConstraints>
+                     <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" vgrow="SOMETIMES" />
+                     <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" vgrow="SOMETIMES" />
+                     <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" percentHeight="0.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                     <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" vgrow="SOMETIMES" />
+                   <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" percentHeight="0.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                   <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" percentHeight="0.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                 </rowConstraints>
+               </GridPane>
+               <ScrollPane fx:id="scrollpane" layoutX="460.0" prefHeight="306.0" prefWidth="70.0" style="-fx-border-color: white;">
+                  <content>
+                     <Label fx:id="log" alignment="TOP_LEFT" contentDisplay="TOP" minWidth="-Infinity" />
+                  </content>
+               </ScrollPane>
+            </children>
+            <cursor>
+               <Cursor fx:constant="CROSSHAIR" />
+            </cursor>
+         </AnchorPane>
+      </center>
+      <bottom>
+         <GridPane alignment="CENTER" BorderPane.alignment="CENTER">
+           <columnConstraints>
+             <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="50.0" />
+             <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="50.0" />
+               <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="50.0" />
+               <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="50.0" />
+               <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="50.0" />
+               <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="50.0" />
+               <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="50.0" />
+           </columnConstraints>
+           <rowConstraints>
+               <RowConstraints maxHeight="25.60001220703125" minHeight="4.799962902069092" prefHeight="4.799962902069092" />
+             <RowConstraints maxHeight="51.20003709793091" minHeight="30.39998779296875" prefHeight="51.20003709793091" />
+           </rowConstraints>
+            <children>
+               <Button mnemonicParsing="false" onAction="#add1" text="^" GridPane.rowIndex="1" />
+               <Button mnemonicParsing="false" onAction="#add2" text="^" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+               <Button mnemonicParsing="false" onAction="#add3" text="^" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+               <Button mnemonicParsing="false" onAction="#add4" text="^" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+               <Button mnemonicParsing="false" onAction="#add5" text="^" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+               <Button mnemonicParsing="false" onAction="#add6" text="^" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+               <Button mnemonicParsing="false" onAction="#add7" text="^" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+            </children>
+            <cursor>
+               <Cursor fx:constant="CROSSHAIR" />
+            </cursor>
+         </GridPane>
+      </bottom>
+      <top>
+         <GridPane alignment="CENTER" prefHeight="38.0" prefWidth="563.0" BorderPane.alignment="CENTER">
+            <columnConstraints>
+               <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="80.0" />
+               <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="20.0" />
+               <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="50.0" />
+               <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="50.0" />
+               <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="30.0" />
+               <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="50.0" />
+               <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="70.0" />
+            </columnConstraints>
+            <rowConstraints>
+               <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" />
+               <RowConstraints maxHeight="79.19998779296876" minHeight="10.0" prefHeight="20.7999900817871" />
+            </rowConstraints>
+            <children>
+               <Button mnemonicParsing="false" onAction="#onResetAction" text="RESET" GridPane.columnIndex="5" />
+               <Button mnemonicParsing="false" onAction="#onClickRandom" prefHeight="25.0" prefWidth="70.0" text="RANDOM" GridPane.columnIndex="6" />
+               <GridPane fx:id="currentColor" prefHeight="4.0" prefWidth="24.0" GridPane.columnIndex="3">
+                 <columnConstraints>
+                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="48.0" />
+                 </columnConstraints>
+                 <rowConstraints>
+                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                 </rowConstraints>
+               </GridPane>
+               <Button mnemonicParsing="false" onAction="#onSwitchP1" prefHeight="26.0" prefWidth="90.0" text="SWITCH P1" />
+            </children>
+         </GridPane>
+      </top>
+   </BorderPane>
+</VBox>
